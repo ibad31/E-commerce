@@ -1,0 +1,242 @@
+header i{
+  color: #ff6000;
+}
+.container-fluid li:hover{
+  background-color: gray;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.topbar-icon {
+    color: #ff6600;
+    font-size: 24px;
+    padding-right: 10px;
+  }
+  .search-btn {
+    background-color: #333;
+    color: white;
+  }
+  .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+  }
+
+ 
+  .top-bar {
+    padding: 15px 0;
+  }
+  .main-nav {
+    background-color: #ff6000;
+  }
+  /* aside{
+    height: 500px;
+  } */
+  
+  .custom-row {
+    display: flex;
+    min-height: 500px;
+  }
+
+  .category-sidebar {
+    width: 270px;
+    background-color: white;
+    border-right: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-top {
+    flex: 2;
+  }
+
+  .image-bottom {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .image-bottom img,
+  .image-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-bottom > div {
+    flex: 1;
+  }
+  
+
+  .list-group a{
+    padding-block: 16.8px;
+  }
+
+  @media (max-width: 768px) {
+    .custom-row {
+      flex-direction: column;
+    }
+    .category-sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .image-section {
+      width: 100%;
+    }
+    .image-top, .image-bottom {
+      flex: unset;
+      height: auto;
+    }
+    .image-bottom {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopDeal Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+<div class="container-fluid py-3 border-bottom">
+  <div class="row align-items-center text-center text-md-start">
+    <div class="col-md-3">
+      <img src="images/logo.png" alt="TopDeal" class="img-fluid">
+    </div>
+    <div class="col-md-3 d-flex align-items-center">
+      <i class="bi bi-house-door-fill text-orange fs-2 me-2"></i>
+      <div>
+        <div>Acme Widgets 123 Widget Street Acmeville,</div>
+        <div>AC 12345 United States of America</div>
+      </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center">
+      <i class="bi bi-envelope-fill text-orange fs-2 me-2"></i>
+      <div>
+        <div>Sales@MagenTech.Com</div>
+        <div>(+123) 456 7890</div>
+      </div>
+    </div>
+    <div class="col-md-3 d-flex align-items-center">
+      <i class="bi bi-cart-fill text-orange fs-2 me-2"></i>
+      <div>
+        <div><strong>Shopping Cart</strong></div>
+        <div>0 items - $0.00</div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<navigation>
+<nav class="navbar navbar-expand-lg navbar-dark bg-orange">
+  <div class="container-fluid">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Contact Us</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">Shipping & Returns</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#">RSS Syndication</a></li>
+    </ul>
+    <form class="d-flex">
+      <input class="form-control" type="search" placeholder="Search the store">
+      <button class="btn btn-dark" type="submit"><i class="bi bi-search text-white"></i></button>
+    </form>
+  </div>
+</nav>
+</navigation>
+
+<!-- Main Section -->
+<div class="container-fluid bg-light py-3">
+  <div class="row">
+    
+    <!-- Sidebar Categories -->
+    <div class="col-md-3">
+      <div class="bg-dark text-white p-2 fw-bold d-flex justify-content-between align-items-center">
+        <span>ALL CATEGORIES</span>
+        <i class="bi bi-chevron-down"></i>
+      </div>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">Hot Deal</a>
+        <a href="#" class="list-group-item list-group-item-action">Spa & Massage</a>
+
+        <!-- Fashion Dropdown -->
+        <div class="dropdown">
+          <a class="list-group-item list-group-item-action dropdown-toggle" data-bs-toggle="dropdown" href="#">Fashion & Accessories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Men's Fashion</a></li>
+            <li><a class="dropdown-item" href="#">Women's Fashion</a></li>
+          </ul>
+        </div>
+
+        <!-- Bags Dropdown -->
+        <div class="dropdown">
+          <a class="list-group-item list-group-item-action dropdown-toggle" data-bs-toggle="dropdown" href="#">Bags</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Handbags</a></li>
+            <li><a class="dropdown-item" href="#">Laptop Bags</a></li>
+          </ul>
+        </div>
+
+        <a href="#" class="list-group-item list-group-item-action">Digital & Electronics</a>
+        <a href="#" class="list-group-item list-group-item-action">Smartphone</a>
+        <a href="#" class="list-group-item list-group-item-action">Health & Beauty</a>
+        <a href="#" class="list-group-item list-group-item-action">Sport Clothing</a>
+        <a href="#" class="list-group-item list-group-item-action">Maternity</a>
+        <a href="#" class="list-group-item list-group-item-action">Jewelry</a>
+        <a href="#" class="list-group-item list-group-item-action text-primary">More Categories</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-9">
+      <div class="row g-3">
+        <div class="col-12">
+          <img src="https://via.placeholder.com/800x400?text=Main+Banner" class="img-fluid w-100">
+        </div>
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/400x200?text=Promo+Left" class="img-fluid w-100">
+        </div>
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/400x200?text=Promo+Right" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+  .bg-orange { background-color: #fc5b0f; }
+</style>
+
+</body>
+</html> */
